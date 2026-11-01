@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090d18"><title>RUDRA AI</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="top"><div class="brand"><span class="orb">R</span><div><b>RUDRA AI</b><small>One workspace · Multiple engines</small></div></div><span class="status"><i></i> Ready</span></header>
+<main>
+<section class="hero"><p class="eyebrow">YOUR ALL-IN-ONE AI WORKSPACE</p><h1>Think. Create. <em>Build.</em></h1><p class="sub">Chat, generate images and write code — from one simple workspace.</p></section>
+<nav class="tabs" aria-label="AI modes">
+<button class="tab active" data-mode="chat">✦ Chat</button><button class="tab" data-mode="image">▧ Image</button><button class="tab" data-mode="code">{ } Code</button>
+</nav>
+<section class="panel">
+<div class="panel-head"><div><span class="mode-icon" id="modeIcon">✦</span><b id="modeTitle">Chat with RUDRA</b></div><span class="pill" id="engine">Groq → Gemini fallback</span></div>
+<label for="prompt" id="promptLabel">What would you like to know?</label>
+<textarea id="prompt" rows="5" maxlength="8000" placeholder="Ask anything..."></textarea>
+<div class="actions"><span class="hint" id="hint">Be clear and specific for better results.</span><button id="run" class="primary">Generate <span>↗</span></button></div>
+</section>
+<section class="result-wrap" id="resultWrap" hidden><div class="result-title"><b>Result</b><button id="copy" class="quiet">Copy</button></div><div id="result" class="result"></div></section>
+<section class="notice"><b>Free-tier note</b><p>Providers may apply quotas, queues, or change free access. RUDRA tries a backup for text requests. Image generation depends on Hugging Face model availability and your token permissions.</p></section>
+</main>
+<footer>RUDRA AI · API keys stay on the server · Use responsibly</footer>
+<script src="/app.js"></script>
+</body></html>
